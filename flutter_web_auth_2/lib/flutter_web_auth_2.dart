@@ -35,14 +35,14 @@ class FlutterWebAuth2 {
       _OnAppLifecycleResumeObserver(_cleanUpDanglingCalls);
 
   static void _assertCallbackScheme(String callbackUrlScheme) {
-    if ((PlatformIs.web || (!PlatformIs.windows && !PlatformIs.linux)) &&
-        !_schemeRegExp.hasMatch(callbackUrlScheme)) {
-      throw ArgumentError.value(
-        callbackUrlScheme,
-        'callbackUrlScheme',
-        'must be a valid URL scheme',
-      );
-    }
+    // if ((PlatformIs.web || (!PlatformIs.windows && !PlatformIs.linux)) &&
+    //     !_schemeRegExp.hasMatch(callbackUrlScheme)) {
+    //   throw ArgumentError.value(
+    //     callbackUrlScheme,
+    //     'callbackUrlScheme',
+    //     'must be a valid URL scheme',
+    //   );
+    // }
   }
 
   /// Ask the user to authenticate to the specified web service.
